@@ -1,27 +1,24 @@
-# LhAngular
+# Situação de Aprendizagem 1: Solução em software
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+A empresa na qual você trabalha precisa de uma solução em software para gerenciar as vagas em aberto no departamento de recursos humanos. Os requisitos desta funcionalidade são:
 
-## Development server
+RF01 – Deve permitir o cadastramento das vagas de emprego em aberto, informando: identificador da vaga (idvaga), descrição do cargo, requisitos obrigatórios, requisitos desejáveis, remuneração mensal (R$), benefícios e local de trabalho.
+RF02 – Deve permitir alterações nos dados das vagas, inclusive indicando se foram preenchidas ou não.
+RF03 – Deve permitir a exclusão de vagas.
+RF04 – Deve exibir todas as vagas em formato de lista;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Passo 1
 
-## Code scaffolding
+Faça um clone deste projeto em uma pasta vazia da sua máquina.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Passo 2
 
-## Build
+Abra o terminal e digite `npm install`. Este comando irá instalar/atualizar todas as dependências necessárias para rodar este projeto na sua máquina. No final, a pastinha 'node_modules' deverá aparecer no projeto.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Passo 3
 
-## Running unit tests
+Abra o terminal e digite `json-server --watch vagas-db.json`. O JSON Server é uma biblioteca capaz de criar uma API Fake em 30 segundos, sem precisar escrever nenhuma linha de código. Você só precisa rodar o comando acima e seu servidor estará iniciado. Lembrando que por padrão a API vai funcionar no enderço: http://localhost:3000.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Passo 4
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+último passo! Abra o terminal e digite `ng serve`. Este comando faz com que sua aplicação frontend fique disponível localmente. Para ver o projeto funcionando, acesse este link: http://localhost:4200/
